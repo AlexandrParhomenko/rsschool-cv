@@ -1,7 +1,9 @@
 Alexander Parkhomenko
 =====================
+
 Contacts:
 --------
+
 -----------------------------------------
 
 ```
@@ -40,8 +42,10 @@ function likes (names) {
     return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
   }
 ```
+
 Courses:
 ------- 
+
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 
 Education:

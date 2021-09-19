@@ -1,1 +1,1 @@
-https://AlexandrParhomenko.github.io/rsschool-cv/blob/index
+https://alexandrparhomenko.github.io/rsschool-cv/

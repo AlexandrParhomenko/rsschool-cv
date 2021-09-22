@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .center {
+      display: flex;
+      text-align: center;
+      font-size: 20px;
+      font-family: Arial, Futura, sans-serif;
+      background-color: #D8BFD8;
+      margin-left: 100px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .container {
+      display: flex;
+    }
+
+    #color {
+      background-color: #D8BFD8;
+    }
+
+    .flex {
+      display: flex;
+      text-align: center;
+      background: #D8BFD8;
+      border-radius: 200px;
+      border: 3px solid #383838;
+    }
+
+    .bla {
+      font-family: Arial, Futura, sans-serif;
+      margin-left: 20px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .code {
+      display: flex;
+      background-color: rgb(118, 16, 235);
+      border: 3px solid #383838;
+      font-size: 20px;
+      padding: 15px;
+      border-radius: 20px 50px;
+      margin-left: 20px;
+    }
+
+    .about {
+      display: flex;
+      background-color: rgb(118, 16, 235);
+      border: 3px solid #383838;
+      font-size: 20px;
+      padding: 15px;
+      border-radius: 20px 50px;
+      margin-left: 20px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .round {
+      border-radius: 100px;
+      border: 3px solid #383838;
+    }
+
+    .text-block {
+      margin-left: 20px;
+    }
+
+    .red {
+      background: orangered;
+      flex-grow: 1;
+      text-align: left;
+      padding-left: 3em;
+      border-radius: 100px 0px 0px 100px;
+    }
+
+    .green {
+      background: #D8BFD8;
+      border-radius: 0px 100px 100px 0px;
+    }
+
+    .container>div {
+      padding: 5em;
+    }
+
+    .head {
+      text-align: left;
+      font-size: 40px;
+      font-family: 'Courier New', Courier, monospace;
+      margin-top: 30px;
+    }
+
+    .footer {
+      background-color: #4B0082;
+    }
+  </style>
+
+  <title class="head">Alexander Parkhomenko</title>
+</head>
+
+<body>
+  <div style="background-color:#4B0082;margin-top: -10px;margin-bottom: -40px;margin-left: -8px;margin-right: -8px;">
+    <div class="container">
+      <div class="red">
+        <header>
+          <img class="round" src="https://pm1.narvii.com/6356/538add9161ccdfd08ef4e2cf4bfc561b36688f2d_hq.jpg"
+            height=200 width=400 alt="Avatar">
+        </header>
+        <section>
+          <h2>Contacts:</h2>
+          <ul>
+            <li class="bla">Email address: sania38163@gmail.com</li>
+            <li class="bla">Phone number: 8-991-380-23-42</li>
+          </ul>
+        </section>
+        <h2>English level:</h2>
+        <a class="bla" href="https://www.efset.org/cert/7hRTEP">С1(advanced)</a>
+        <figure>
+          <img class="flex" src="https://cdn.efset.org/efset-widget/img/certificate_63.png" width="240" height="240"
+            alt="Level">
+        </figure>
+        <h2>Video summary:</h2>
+        <a class="bla" href="https://www.youtube.com/watch?v=Q3C1HVboAzM">Video link</a>
+      </div>
+      <div class="green">
+        <h1 class="head">Alexander Parkhomenko</h1>
+        <div id="color">
+          <article>
+            <h2>About me:</h2>
+            <div class="about">I'm a student, i got my bachelor's degree this year at the Dostoevski Omsk State
+              University
+              and went to the master's degree. My main advantages are reliability, responsible approach to work, and
+              good
+              teamwork skills. I am new to web programming, so I try to learn as much as possible, it is very exciting
+              and
+              challenging.
+            </div>
+          </article>
+        </div>
+        <h2>Skills:</h2>
+        <div class="about">
+          <ul>
+            <li>Python</li>
+            <li>React.js</li>
+            <li>Posgresql</li>
+            <li>Git, Github</li>
+            <li>Photoshop</li>
+          </ul>
+        </div>
+        <h2>Code example:</h2>
+        <pre class="code">function likes (names) {
+      if (names.length === 0) {
+        return 'no one likes this';
+      } else if (names.length === 1) {
+        return `${names[0]} likes this`;
+      } else if (names.length === 2) {
+        return `${names[0]} and ${names[1]} like this`;
+      } else if (names.length === 3) {
+        return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+      } else if (names.length > 3) {
+        return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
+      }</pre>
+        <h2>Courses:</h2>
+        <ul>
+          <li class="bla">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+        </ul>
+        <h2>Education:</h2>
+        <p class="bla">2017-2021 </p>
+        <p class="bla"><b>BSc, Mathematics and computer science</b>, Omsk state university</p>
+        <p class="bla"><i>Major: Cybernetics</i></p>
+      </div>
+    </div>
+    <footer class="footer">
+      <table>
+        <tr>
+          <th style="text-align:right; width:0%"><a href="https://github.com/AlexandrParhomenko">
+              <img
+                src="https://www.pikpng.com/pngl/b/247-2473934_image-freeuse-download-png-icon-free-download-onlinewebfonts.png"
+                height=50 width=50 alt="Github"></a></th>
+          <th style="width:100%;"><b>2021</b></th>
+          <th style="text-align:left; width:0%;"><a href="https://rs.school/js/">
+              <img src="https://rs.school/images/rs_school_js.svg" height=100 width=100 alt="RSSchool"></a></th>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -36,7 +36,7 @@
       border: 3px solid #383838;
     }
 
-    .bla {
+    .text {
       font-family: Arial, Futura, sans-serif;
       margin-left: 20px;
       font-family: 'Courier New', Courier, monospace;
@@ -73,7 +73,7 @@
     }
 
     .red {
-      background: orangered;
+      background: #f1a12d;
       flex-grow: 1;
       text-align: left;
       padding-left: 3em;
@@ -98,6 +98,34 @@
 
     .footer {
       background-color: #4B0082;
+      display: flex;
+      border-radius: 100px;
+      border: 5px solid #eee903;
+      align-items: center;
+      background: #D8BFD8;
+      margin: 10px;
+      height:80px;
+    }
+
+    .footer-class{
+      list-style:none;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    body {
+      background-color: #525252;
     }
   </style>
 
@@ -105,43 +133,34 @@
 </head>
 
 <body>
-  <div style="background-color:#4B0082;margin-top: -10px;margin-bottom: -40px;margin-left: -8px;margin-right: -8px;">
+  <main class="main">
     <div class="container">
       <div class="red">
         <header>
           <img class="round" src="https://pm1.narvii.com/6356/538add9161ccdfd08ef4e2cf4bfc561b36688f2d_hq.jpg"
             height=200 width=400 alt="Avatar">
         </header>
-        <section>
-          <h2>Contacts:</h2>
-          <ul>
-            <li class="bla">Email address: sania38163@gmail.com</li>
-            <li class="bla">Phone number: 8-991-380-23-42</li>
-          </ul>
-        </section>
+        <h2>Contacts:</h2>
+        <ul>
+          <li class="text">Email address: sania38163@gmail.com</li>
+          <li class="text">Phone number: 8-991-380-23-42</li>
+        </ul>
         <h2>English level:</h2>
-        <a class="bla" href="https://www.efset.org/cert/7hRTEP">С1(advanced)</a>
-        <figure>
-          <img class="flex" src="https://cdn.efset.org/efset-widget/img/certificate_63.png" width="240" height="240"
-            alt="Level">
-        </figure>
+        <a class="text" href="https://www.efset.org/cert/7hRTEP">С1(advanced)</a>
+        <img class="flex" src="https://cdn.efset.org/efset-widget/img/certificate_63.png" width="240" height="240"
+          alt="Level">
         <h2>Video summary:</h2>
-        <a class="bla" href="https://www.youtube.com/watch?v=Q3C1HVboAzM">Video link</a>
+        <a class="text" href="https://www.youtube.com/watch?v=Q3C1HVboAzM">Video link</a>
       </div>
       <div class="green">
-        <h1 class="head">Alexander Parkhomenko</h1>
+        <p class="head">Alexander Parkhomenko</p>
         <div id="color">
-          <article>
-            <h2>About me:</h2>
-            <div class="about">I'm a student, i got my bachelor's degree this year at the Dostoevski Omsk State
-              University
-              and went to the master's degree. My main advantages are reliability, responsible approach to work, and
-              good
-              teamwork skills. I am new to web programming, so I try to learn as much as possible, it is very exciting
-              and
-              challenging.
-            </div>
-          </article>
+          <h1>About me:</h1>
+          <p class="about">I'm a student, i got my bachelor's degree this year at the Dostoevski Omsk State University
+            and went to the master's degree. My main advantages are reliability, responsible approach to work, and good
+            teamwork skills. I am new to web programming, so I try to learn as much as possible, it is very exciting and
+            challenging.
+          </p>
         </div>
         <h2>Skills:</h2>
         <div class="about">
@@ -168,28 +187,31 @@
       }</pre>
         <h2>Courses:</h2>
         <ul>
-          <li class="bla">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+          <li class="text">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
         </ul>
         <h2>Education:</h2>
-        <p class="bla">2017-2021 </p>
-        <p class="bla"><b>BSc, Mathematics and computer science</b>, Omsk state university</p>
-        <p class="bla"><i>Major: Cybernetics</i></p>
+        <p class="text">2017-2021 </p>
+        <p class="text"><b>BSc, Mathematics and computer science</b>, Omsk state university</p>
+        <p class="text"><i>Major: Cybernetics</i></p>
       </div>
     </div>
-    <footer class="footer">
-      <table>
-        <tr>
-          <th style="text-align:right; width:0%"><a href="https://github.com/AlexandrParhomenko">
-              <img
-                src="https://www.pikpng.com/pngl/b/247-2473934_image-freeuse-download-png-icon-free-download-onlinewebfonts.png"
-                height=50 width=50 alt="Github"></a></th>
-          <th style="width:100%;"><b>2021</b></th>
-          <th style="text-align:left; width:0%;"><a href="https://rs.school/js/">
-              <img src="https://rs.school/images/rs_school_js.svg" height=100 width=100 alt="RSSchool"></a></th>
-        </tr>
-      </table>
+  </main>
+  <footer class="footer">
+<ul class = "footer-class">
+  <li>
+<a target="_blank" href="https://github.com/AlexandrParhomenko"><img
+        src="https://www.pikpng.com/pngl/b/247-2473934_image-freeuse-download-png-icon-free-download-onlinewebfonts.png"
+        height=50 width=50 alt="Github"></a>
+  </li>
+  <li>
+    <span style="width:100%;font-size:20px;">2021</span>
+  </li>
+  <li>
+    <a target="_blank" href="https://rs.school/js/">
+      <img src="https://rs.school/images/rs_school_js.svg" height=100 width=100 alt="RSSchool"></a>
+  </li>
+</ul>
     </footer>
-  </div>
-</body>
 
+</body>
 </html>
